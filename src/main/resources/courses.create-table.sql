@@ -1,0 +1,8 @@
+use SBA_week8;
+
+CREATE TABLE course (
+	id INT NOT NULL,
+	NAME VARCHAR(50) NOT NULL,
+	instructor VARCHAR(50) NOT NULL,
+	PRIMARY KEY(id)
+);
