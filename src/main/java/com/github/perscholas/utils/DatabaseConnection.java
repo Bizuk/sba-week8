@@ -11,7 +11,7 @@ public enum DatabaseConnection {
 
     private Connection getConnection(String dbVendor){
         String username = "root";
-        String password = "breanna1003";
+        String password = "";
         String databaseName = "SBA_week8";
         String url = "jdbc:" + dbVendor + "://127.0.0.1/";
         try {

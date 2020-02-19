@@ -1,27 +1,15 @@
 package com.github.perscholas.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
 // TODO - Annotate and Implement respective interface and define behaviors
-@Entity
 public class Course implements CourseInterface {
-    @Id
-    @Column(name = "id")
-    private Integer id;
-    @Column(name = "name")
-    private String name;
-    @Column(name = "instructor")
-    private String instructor;
+    int id;
+    String name;
+    String instructor;
 
-    public Course(Integer id, String name, String instructor) {
+    public Course(int id, String name, String instructor) {
         this.id = id;
         this.name = name;
         this.instructor = instructor;
-    }
-
-    public Course() {
     }
 
     @Override
@@ -29,7 +17,6 @@ public class Course implements CourseInterface {
         return id;
     }
 
-    @Override
     public void setId(Integer id) {
         this.id = id;
     }
@@ -44,12 +31,10 @@ public class Course implements CourseInterface {
         this.name = name;
     }
 
-    @Override
     public String getInstructor() {
         return instructor;
     }
 
-    @Override
     public void setInstructor(String instructor) {
         this.instructor = instructor;
     }
